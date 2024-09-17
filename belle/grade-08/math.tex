@@ -1,0 +1,254 @@
+\documentclass[12pt]{article}
+
+% Packages for font, formatting, and layout
+\usepackage[osf]{libertine}       % Old-Style Figures (OSF)
+\usepackage{microtype}            % Micro-typographic adjustments
+\usepackage[margin=1in]{geometry} % Geometry for page layout
+\usepackage{amsmath, amssymb}     % Math symbols
+\usepackage{pgfplots}             % For graphing
+\pgfplotsset{width=10cm,compat=1.15}
+\usepackage{tikz}                 % For additional graphics
+\usepackage{hyperref}             % For clickable references
+
+% Title and author information
+\title{8th Grade Class Notes}
+\author{Ethan Kent}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Measures of Central Tendency and Spread}
+
+When analyzing a set of data, there are different ways to summarize both the
+center of the data and the spread of the data. Two common ways to describe the
+center of a dataset are the \emph{median} and the \emph{mean}.
+
+Similarly, two ways to describe how spread out the data are include the
+\emph{interquartile range} (IQR) and the \emph{standard deviation}.
+
+Each of these measures has its strengths, particularly when it comes to handling
+\emph{outliers}---data points that are significantly higher or lower than the
+others.
+
+\subsection{Median and Interquartile Range}
+
+The median is the middle value in a set of data when the numbers are arranged in
+order. It splits the data into two equal halves: half of the values are below
+the median, and half are above.
+
+The interquartile range (IQR) measures the spread of the middle 50\% of the
+data. It is calculated as the difference between the third quartile (the value
+below which 75\% of the data falls) and the first quartile (the value below
+which 25\% of the data falls).
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{box-whisker-plot}
+  \caption{A box-and-whisker plot showing the distribution of data, highlighting the median, quartiles, and outliers.}
+  \label{fig:box-whisker}
+\end{figure}
+
+\begin{itemize}
+  \item The median and IQR are most useful when the data contains outliers.
+        This is because the median is not affected by extremely large or small
+        values, while the mean can be pulled significantly in one direction by
+        outliers.
+  \item For example, consider the incomes of a small group of people. If one
+        person in the group is a millionaire, the \emph{mean} income would be
+        much higher than most people's actual incomes, making it a misleading
+        measure of the ``typical'' income. In this case, the \emph{median}
+        income would give a better idea of what most people in the group earn.
+\end{itemize}
+
+\textbf{Example:}
+
+\begin{itemize}
+  \item Data set: $\{10, 12, 15, 18, 100\}$ (an outlier at 100).
+  \item \textbf{Median}: The median is 15, which is a good representation of the
+        middle of the data.
+  \item \textbf{IQR}: The IQR tells us how spread out the middle 50\% of the
+        data is, ignoring the outlier at 100.
+\end{itemize}
+
+\subsection{Mean and Standard Deviation}
+
+The mean is the average of the values in a data set. It is found by adding all
+the values together and dividing by the number of values. The standard deviation
+is a measure of how spread out the numbers are from the mean. A small standard
+deviation means that the values are close to the mean, while a large standard
+deviation indicates that the values are more spread out.
+
+\begin{itemize}
+  \item The mean and standard deviation are best used when the data is
+        \emph{symmetric} and does not contain outliers. Because the mean is
+        sensitive to extremely large or small values, outliers can skew the
+        result and give a misleading picture of the data.
+  \item When the data is fairly uniform, the mean provides a good measure of
+        central tendency, and the standard deviation gives a clear indication of
+        how much the data values vary around the mean.
+\end{itemize}
+
+\textbf{Example:}
+
+\begin{itemize}
+  \item Data set: $\{10, 12, 15, 18, 20\}$.
+  \item \textbf{Mean}: The mean is 15, which accurately reflects the central
+        tendency of the data since there are no outliers.
+  \item \textbf{Standard Deviation}
+        \begin{itemize}
+          \item The standard deviation, $\sigma$ (lowercase sigma), gives a
+                sense of how closely clustered the data points are around the
+                mean. In this population, $\sigma = 3.69$.
+          \item If the data set were $\{1, 8, 15, 22, 29\}$, the mean would still
+                be 15, but $\sigma = 9.90$
+        \end{itemize}
+
+
+\end{itemize}
+
+\subsection{Choosing Between Median and Mean}
+
+The key difference between using the median or the mean depends on whether your data contains **outliers**.
+
+\begin{itemize}
+  \item If your data has extreme values (outliers), the \emph{median} and
+        \emph{IQR} will give you a better understanding of the typical values in
+        your data set.
+  \item If your data does not have outliers and is relatively symmetric, the
+        \emph{mean} and \emph{standard deviation} provide a more precise
+        description of both the center and the spread of the data.
+\end{itemize}
+
+In summary:
+\begin{itemize}
+  \item Use the \emph{median} and \emph{IQR} when there are \emph{outliers} or
+        a \emph{skewed distribution}.
+  \item Use the \emph{mean} and \emph{standard deviation} when the data is
+        \emph{symmetrically distributed} and \emph{outlier-free}.
+\end{itemize}
+
+\section{Plugging in Numbers for Equations}
+
+You may be asked to solve an equation when given a value for the variable. For
+example:
+
+\begin{align*}
+  d & = 3l + 2 \quad   & \text{Original equation} \\
+  d & = 3(4) + 2 \quad & \text{Substitute } l = 4 \\
+  d & = 12 + 2 \quad   & \text{Multiply 3 by 4}   \\
+  d & = 14 \quad       & \text{Simplify}
+\end{align*}
+
+You might also be asked whether an ordered pair satisfies an equation. To solve
+this, remember that an ordered pair represents the $x$ and $y$ values, in that
+order. For example, given the equation: $y = 2x - 5$, you can determine if the
+ordered pair $(3, 1)$ satisfies the equation by substituting $x = 3$ and $y =
+  1$:
+
+\begin{align*}
+  y & = 2x - 5         & \text{Original equation}                    \\
+  1 & = 2(3) - 5 \quad & \text{Substitute } x = 3 \text{ and } y = 1 \\
+  1 & = 6 - 5 \quad    & \text{Multiply 2 by 3}                      \\
+  1 & = 1 \quad        & \text{Simplify, the equation is true}
+\end{align*}
+
+Since the equation is true when substituting the values, the ordered pair $(3,
+  1)$ does satisfy the equation. If the equation were false after substituting the
+values, then the ordered pair would not satisfy the equation.
+
+\section{Graphing}
+
+When asked to graph a linear equation on the coordinate plane, there are several
+approaches. First, we can make a table by choosing values for $x$ and then
+solving for $y$. From this, we can make a table of $x$ and $y$ values, plot
+those points on the coordinate plane, and connect the points to form a line.
+
+\subsection{Creating a Table from an Equation}
+
+Let's take the equation \( y = 2x + 1 \). We can create a table by selecting
+values for $x$ and calculating the corresponding $y$ values.
+
+\begin{center}
+  \begin{tabular}{cc}
+    \hline
+    $x$  & $y$  \\
+    \hline
+    $-2$ & $-3$ \\
+    $0$  & $1$  \\
+    $2$  & $5$  \\
+    \hline
+  \end{tabular}
+\end{center}
+
+Now we can plot the points $(-2, -3)$, $(0, 1)$, and $(2, 5)$ on the coordinate
+plane. By connecting these points, we form the line representing the equation \(
+y = 2x + 1 \).
+
+\subsection{Graphing Using Point-Slope Form}
+
+You can also take advantage of an equation in point-slope form by remembering
+how to find the slope and $y$-intercept. Recall that \emph{slope} is
+$\frac{\text{rise}}{\text{run}}$, meaning how much the line goes up (or down)
+for every unit it moves horizontally. The slope, denoted as $m$, tells you how
+steep the line is, and the $y$-intercept, denoted as $b$, is the point where the
+line crosses the $y$-axis.
+
+The general form of a linear equation is:
+\[
+  y = mx + b
+\]
+where:
+\begin{itemize}
+  \item $m$ is the slope (rise/run)
+  \item $b$ is the $y$-intercept
+\end{itemize}
+
+To graph an equation like \( y = 3x - 2 \), you can start by plotting the
+$y$-intercept, which is the point $(0, -2)$. From there, use the slope \( m = 3
+\), which means for every 1 unit increase in $x$, $y$ increases by 3 units (rise
+of 3 and run of 1). Plot a second point based on this slope, then draw a line
+through both points.
+
+\subsection{Example: Graphing Using Slope and Y-Intercept}
+
+Let's graph the equation \( y = 3x - 2 \). Here's how to do it:
+
+\begin{enumerate}
+  \item The $y$-intercept is $-2$, so plot the point $(0, -2)$.
+  \item The slope is $3$, which is $\frac{3}{1}$. This means from the
+        $y$-intercept, move up 3 units and 1 unit to the right. Plot this second
+        point at $(1, 1)$.
+  \item Now, connect the two points to form the line.
+\end{enumerate}
+
+This is a quick and effective way to graph linear equations without needing to
+make a full table of values.
+
+\begin{center}
+  \begin{tikzpicture}
+    \begin{axis}[
+        axis lines = middle,
+        xlabel = {$x$},
+        ylabel = {$y$},
+        grid = both,
+        minor tick num=1,
+        major grid style = {lightgray},
+        minor grid style = {dotted,lightgray},
+        domain=-5:5,
+        samples=100,
+        width=10cm,
+        height=10cm,
+      ]
+      \addplot[color=blue, thick]{3*x - 2};
+    \end{axis}
+  \end{tikzpicture}
+\end{center}
+
+In this example, the line crosses the $y$-axis at $-2$ and follows a slope of
+$3$.
+
+\end{document}
