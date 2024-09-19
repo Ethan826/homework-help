@@ -1,9 +1,15 @@
-\contentsline {section}{\numberline {1}Measures of Central Tendency and Spread}{1}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Median and Interquartile Range}{1}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Mean and Standard Deviation}{2}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Choosing Between Median and Mean}{3}{subsection.1.3}%
-\contentsline {section}{\numberline {2}Plugging in Numbers for Equations}{3}{section.2}%
-\contentsline {section}{\numberline {3}Graphing}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Creating a Table from an Equation}{4}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Graphing Using Point-Slope Form}{4}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Example: Graphing Using Slope and Y-Intercept}{5}{subsection.3.3}%
+\contentsline {section}{\numberline {1}Measures of Central Tendency and Spread}{1}{}%
+\contentsline {subsection}{\numberline {1.1}Median and Interquartile Range}{2}{}%
+\contentsline {subsection}{\numberline {1.2}Mean and Standard Deviation}{2}{}%
+\contentsline {subsection}{\numberline {1.3}Choosing Between Median and Mean}{3}{}%
+\contentsline {section}{\numberline {2}Plugging in Numbers for Equations}{3}{}%
+\contentsline {section}{\numberline {3}Graphing}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Creating a Table from an Equation}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Graphing Using Point-Slope Form}{4}{}%
+\contentsline {subsection}{\numberline {3.3}Graphing Using Slope and $y$-Intercept}{5}{}%
+\contentsline {section}{\numberline {4}Functions, Function Notation, and Sequences}{6}{}%
+\contentsline {subsection}{\numberline {4.1}Sequences}{7}{}%
+\contentsline {section}{\numberline {5}Functions vs. Relations}{7}{}%
+\contentsline {subsection}{\numberline {5.1}As ordered pairs}{8}{}%
+\contentsline {subsection}{\numberline {5.2}As a graph}{8}{}%
+\contentsline {subsection}{\numberline {5.3}As a mapping of domain to range}{8}{}%
